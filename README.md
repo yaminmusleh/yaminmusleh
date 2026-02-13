@@ -30,4 +30,4 @@ If it’s hard to read, it’s not done
 
 If you like how I build, want to collaborate, or just talk tech — you know where to find me.
 Appreciate you stopping by
-![GitHubCard](https://githubcard.com/g/lIZHKTpR.svg)
+
