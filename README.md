@@ -11,9 +11,28 @@ What I’m About:
 Stack & Skills:
 
 Frontend:
--HTML, CSS, Bootstrap and JavaScript (modern, not messy)
--Component-based frameworks
--Responsive layouts & accessibility
+- HTML, CSS, JavaScript (modern ES6+ practices)
+- React.js
+- Component-based architecture
+- Responsive design & accessibility (a11y)
+- Modern UI development principles
+
+Programming Languages:
+- C++
+- JavaScript (Prefers React.js framework)
+- HTML/CSS
+
+C++:
+- Object-Oriented Programming (OOP)
+- STL (Standard Template Library)
+- Data structures & algorithms
+- Memory management (pointers, references, smart pointers)
+- Modern C++ practices (C++11/14/17/20)
+- Debugging and performance optimization
+
+Development Practices:
+- Clean, maintainable code
+- Version control with Git
 
 🧪 Projects:
 The repositories here aren’t just demos — they reflect how I think and build:
