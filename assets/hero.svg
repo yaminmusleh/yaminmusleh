@@ -1,41 +1,308 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title desc">
   <title id="title">Yamen Mosleh — Full-Stack Developer</title>
-  <desc id="desc">Terminal-style banner: web, C++ systems, and Godot game development.</desc>
+  <desc id="desc">Frutiger Aero inspired banner with blue sky, clouds, green hills, water and glass.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#151b27"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#42bff2"/>
+      <stop offset="0.55" stop-color="#9de8fa"/>
+      <stop offset="1" stop-color="#dffaff"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#58a6ff"/>
-      <stop offset="1" stop-color="#a371f7"/>
+
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38c9df"/>
+      <stop offset="1" stop-color="#087fb5"/>
     </linearGradient>
-    <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-      .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .line { animation: in .6s ease both; }
-      .l1 { animation-delay: .2s; }
-      .l2 { animation-delay: .8s; }
-      .l3 { animation-delay: 1.4s; }
-      .l4 { animation-delay: 2s; }
-      @keyframes in { from { opacity: 0; } to { opacity: 1; } }
-      .cursor { animation: blink 1.1s steps(1) infinite; }
-      @keyframes blink { 50% { opacity: 0; } }
-    </style>
+
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8bd96d"/>
+      <stop offset="1" stop-color="#27954e"/>
+    </linearGradient>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#d8f8ff" stop-opacity="0.48"/>
+    </linearGradient>
+
+    <radialGradient id="sun">
+      <stop offset="0" stop-color="#fffbd0"/>
+      <stop offset="0.55" stop-color="#fff5a2"/>
+      <stop offset="1" stop-color="#fff5a2" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="clip">
+      <rect width="900" height="300" rx="18"/>
+    </clipPath>
   </defs>
 
-  <rect width="900" height="300" rx="16" fill="url(#bg)"/>
-  <rect x="1" y="1" width="898" height="298" rx="15" fill="none" stroke="#30363d"/>
+  <g clip-path="url(#clip)">
 
-  <circle cx="28" cy="26" r="5" fill="#484f58"/>
-  <circle cx="46" cy="26" r="5" fill="#484f58"/>
-  <circle cx="64" cy="26" r="5" fill="#484f58"/>
-  <line x1="0" y1="48" x2="900" y2="48" stroke="#21262d"/>
+    <!-- SKY -->
+    <rect width="900" height="300" fill="url(#sky)"/>
 
-  <text class="mono" x="870" y="225" font-size="130" text-anchor="end" fill="#58a6ff" opacity="0.06">&lt;/&gt;</text>
+    <!-- SUN -->
+    <circle cx="770" cy="58" r="90" fill="url(#sun)"/>
+    <circle cx="770" cy="58" r="38" fill="#fff8b0"/>
 
-  <text class="mono line l1" x="48" y="92" font-size="20" fill="#8b949e"><tspan fill="#a371f7">$</tspan> whoami</text>
-  <text class="sans line l2" x="48" y="165" font-size="64" font-weight="700" fill="#e6edf3">Yamen Mosleh</text>
-  <text class="sans line l3" x="48" y="210" font-size="28" font-weight="600" fill="url(#accent)">Full-Stack Developer</text>
-  <text class="mono line l4" x="48" y="258" font-size="20" fill="#8b949e">web  /  C++ systems  /  Godot <tspan class="cursor" fill="#58a6ff">▌</tspan></text>
+    <!-- CLOUD 1 -->
+    <g fill="#ffffff">
+      <ellipse cx="105" cy="66" rx="65" ry="25"/>
+      <ellipse cx="155" cy="57" rx="42" ry="32"/>
+      <ellipse cx="195" cy="70" rx="55" ry="21"/>
+      <ellipse cx="70" cy="74" rx="35" ry="20"/>
+    </g>
+
+    <!-- CLOUD 2 -->
+    <g fill="#ffffff" opacity="0.78">
+      <ellipse cx="540" cy="52" rx="55" ry="20"/>
+      <ellipse cx="580" cy="43" rx="35" ry="27"/>
+      <ellipse cx="620" cy="55" rx="48" ry="18"/>
+    </g>
+
+    <!-- SMALL CLOUDS -->
+    <g fill="#ffffff" opacity="0.48">
+      <ellipse cx="350" cy="93" rx="55" ry="12"/>
+      <ellipse cx="385" cy="89" rx="28" ry="13"/>
+      <ellipse cx="850" cy="108" rx="45" ry="11"/>
+    </g>
+
+    <!-- DISTANT HILLS -->
+    <path
+      d="M0 215
+         C100 165 165 185 250 212
+         C340 240 390 170 470 180
+         C550 188 610 220 690 188
+         C770 157 835 175 900 200
+         L900 300 L0 300 Z"
+      fill="#68cc68"
+    />
+
+    <!-- MAIN HILL -->
+    <path
+      d="M0 235
+         C100 198 180 207 270 233
+         C350 257 410 201 490 207
+         C570 213 625 247 710 215
+         C790 185 850 202 900 220
+         L900 300 L0 300 Z"
+      fill="url(#grass)"
+    />
+
+    <!-- WATER -->
+    <path
+      d="M0 230
+         C120 219 210 232 300 240
+         C400 250 470 233 570 239
+         C680 246 780 222 900 232
+         L900 300 L0 300 Z"
+      fill="url(#water)"
+    />
+
+    <!-- WATER HIGHLIGHTS -->
+    <g fill="#baf7ff" opacity="0.55">
+      <rect x="25" y="260" width="125" height="3" rx="2"/>
+      <rect x="180" y="275" width="90" height="3" rx="2"/>
+      <rect x="315" y="255" width="135" height="3" rx="2"/>
+      <rect x="500" y="277" width="115" height="3" rx="2"/>
+      <rect x="665" y="257" width="145" height="3" rx="2"/>
+      <rect x="790" y="273" width="70" height="3" rx="2"/>
+    </g>
+
+    <!-- GLASS PANEL SHADOW -->
+    <rect
+      x="40"
+      y="77"
+      width="820"
+      height="174"
+      rx="24"
+      fill="#08729c"
+      opacity="0.18"
+    />
+
+    <!-- GLASS PANEL -->
+    <rect
+      x="38"
+      y="73"
+      width="820"
+      height="174"
+      rx="24"
+      fill="url(#glass)"
+      stroke="#ffffff"
+      stroke-width="2"
+      stroke-opacity="0.8"
+    />
+
+    <!-- GLASS HIGHLIGHT -->
+    <path
+      d="M62 88
+         C220 78 390 82 535 83
+         C670 84 770 81 835 94
+         L835 111
+         C690 101 500 104 350 103
+         C205 102 120 107 62 114 Z"
+      fill="#ffffff"
+      opacity="0.28"
+    />
+
+    <!-- TITLE -->
+    <text
+      x="73"
+      y="119"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="15"
+      font-weight="bold"
+      letter-spacing="3"
+      fill="#075d82"
+    >
+      HELLO, WORLD!
+    </text>
+
+    <text
+      x="70"
+      y="169"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="52"
+      font-weight="bold"
+      fill="#064f70"
+    >
+      Yamen Mosleh
+    </text>
+
+    <text
+      x="73"
+      y="204"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="23"
+      font-weight="bold"
+      fill="#087ba7"
+    >
+      Full-Stack Developer
+    </text>
+
+    <!-- STATUS PILL -->
+    <rect
+      x="73"
+      y="218"
+      width="305"
+      height="26"
+      rx="13"
+      fill="#ffffff"
+      fill-opacity="0.62"
+      stroke="#ffffff"
+      stroke-opacity="0.75"
+    />
+
+    <circle cx="89" cy="231" r="5" fill="#35bd68"/>
+
+    <text
+      x="103"
+      y="235"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="12"
+      font-weight="bold"
+      fill="#17647e"
+    >
+      web · C++ systems · Godot
+    </text>
+
+    <!-- BUBBLES -->
+    <circle
+      cx="815"
+      cy="135"
+      r="25"
+      fill="#baf5ff"
+      fill-opacity="0.38"
+      stroke="#ffffff"
+      stroke-opacity="0.7"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="807"
+      cy="126"
+      r="6"
+      fill="#ffffff"
+      fill-opacity="0.7"
+    />
+
+    <circle
+      cx="785"
+      cy="205"
+      r="14"
+      fill="#baf5ff"
+      fill-opacity="0.4"
+      stroke="#ffffff"
+      stroke-opacity="0.65"
+      stroke-width="2"
+    />
+
+    <circle
+      cx="780"
+      cy="200"
+      r="3"
+      fill="#ffffff"
+      fill-opacity="0.8"
+    />
+
+    <circle
+      cx="848"
+      cy="232"
+      r="9"
+      fill="#baf5ff"
+      fill-opacity="0.4"
+      stroke="#ffffff"
+      stroke-opacity="0.65"
+    />
+
+    <!-- LEAF -->
+    <path
+      d="M710 221
+         C713 202 731 195 749 199
+         C744 216 729 226 710 221 Z"
+      fill="#61c86b"
+      stroke="#ffffff"
+      stroke-opacity="0.65"
+      stroke-width="1.5"
+    />
+
+    <path
+      d="M713 219 C724 214 734 207 744 201"
+      fill="none"
+      stroke="#d9ffd4"
+      stroke-width="2"
+    />
+
+    <!-- SPARKLES -->
+    <g fill="#ffffff" opacity="0.85">
+      <path d="M286 43 L289 51 L297 54 L289 57 L286 65 L283 57 L275 54 L283 51 Z"/>
+      <path d="M470 59 L472 65 L478 67 L472 69 L470 75 L468 69 L462 67 L468 65 Z"/>
+      <path d="M704 102 L706 109 L713 111 L706 113 L704 120 L702 113 L695 111 L702 109 Z"/>
+    </g>
+
+  </g>
+
+  <!-- BORDER -->
+  <rect
+    x="1"
+    y="1"
+    width="898"
+    height="298"
+    rx="18"
+    fill="none"
+    stroke="#ffffff"
+    stroke-opacity="0.65"
+    stroke-width="2"
+  />
+
+  <rect
+    x="2"
+    y="2"
+    width="896"
+    height="296"
+    rx="17"
+    fill="none"
+    stroke="#0875a0"
+    stroke-opacity="0.25"
+  />
 </svg>
